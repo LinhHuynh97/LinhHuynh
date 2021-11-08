@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400&family=Raleway:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+/* CSS Document */
+body{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	width: 100%;
+	height: 3600px;
+	background-color: white;
+}
+.header{
+	width: 100%;
+	height: 100px;
+	background-color: #FFAA00;
+	padding: 0 100px;
+	box-sizing: border-box;
+	position: fixed;
+	z-index: 1000;
+}
+/*Logo*/
+.logo{
+	width: 30%;
+	height: 70px;
+	float: left;
+}
+.logo-img{
+	width: 150px;
+	float: left;
+	position: relative;
+	bottom: 15px;
+}
+/*Menu*/
+.menu{
+	width: 70%;
+	height: 70px;
+	float: right;
+	position: relative;
+	top: 30px;
+	left: 280px;
+	font-size: 24px;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color:#00BEFE;
+  color: white;
+}
+/* Make the image fully responsive */
+ .carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+/*The gioi quan */
+.tongquan{
+	width: 100%;
+	height: 100px;
+	color: white;
+}
+.img-nv{
+	width: 40%;
+	height: 100px;
+}
+.Himeko{
+	width: 100%;
+	float: left;
+}
+.thongtin{
+	width: 60%;
+	height: 700px;
+	float:right;
+	top: 100px;
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	word-spacing: 1px;
+}
+/*Tin tuc*/
+.tieudetintuc{
+	position: relative;
+	top: 700px;
+	right: 350px;
+}
+.tintuc{
+	width: 100%;
+	height: 500px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+	height: 450px;
+	margin: 1%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+/*Gallery*/
+.tieudehinhanh{
+	position: relative;
+	color: white;
+}
+.gallery{
+	width: 100%;
+	height: 450px;
+}
+.pic-item{
+	width: 25%;
+	height: 220px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.pic-item img{
+	transform: scale(1);
+	transition: all .2s linear;
+	opacity: 1;
+}
+.pic-item:hover img{
+	transform: scale(1.2);
+	opacity: .5;
+}
+.icon{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 100px;
+	left: 200px;
+}
+.pic-item .icon{
+	opacity: 0;
+	transition: all .3s linear;
+	transform: scale(0);
+	left: -200px;
+}
+.pic-item:hover .icon{
+	opacity: 1;
+	transform: scale(1);
+	left: 200px;
+}
+/* Lienhe*/
+.tieudelienhe{
+	position: relative;
+	color: black;
+	top: 100px;
+}
+.formlienhe{
+	width: 100%;
+	height:500px;
+	background-color: white;
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #FFA41A;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #FFA41A;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #FFA41A;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container02 {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container02:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container02 .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container02 .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container02 .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container02 .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container02 .info span .fa {
+  color: #EF3B3A;     
+}
+.footer{
+	width: 100%;
+	height: 400px;
+	background: black;
+}
+.footer-img{
+	width: 40%;
+	height: 400px;
+}
+.mihoyo{
+	width: 50%;
+	position: relative;
+	left: 100px;
+}
+.thongtinfooter{
+	width: 60%;
+	color: white;
+	position: relative;
+	bottom: 280px;
+	left: 600px;
+}
